@@ -6,14 +6,11 @@ module.exports = (grunt) ->
       target:
         rjsConfig: 'app/config.js'
 
-    clean:
-      target:
-        src: ['app/libs']
-
     bowerTask:
       install:
         options:
           install: true
+          prune: true
 
     release:
       options:
@@ -40,4 +37,4 @@ module.exports = (grunt) ->
   grunt.renameTask    'bower', 'bowerRequire'
 
   grunt.registerTask 'default' , ['updateDependencies','watch']
-  grunt.registerTask 'updateDependencies' , ['sync','clean','bowerTask','bowerRequire']
+  grunt.registerTask 'updateDependencies' , ['sync','bowerTask','bowerRequire']

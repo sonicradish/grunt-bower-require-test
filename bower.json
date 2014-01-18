@@ -1,0 +1,23 @@
+{
+  "name": "build",
+  "version": "0.2.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "require-cs": "~0.4.4",
+    "backbone": "~1.1.0",
+    "lodash": "~2.4.1",
+    "requirejs": "~2.1.10",
+    "jquery": "~2.0.3"
+  },
+  "main": [
+    "index.js"
+  ]
+}
